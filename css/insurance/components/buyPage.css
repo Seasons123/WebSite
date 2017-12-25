@@ -1,0 +1,239 @@
+/*lifeInsuranceBuyPage*/
+/**/
+/**/
+/**/
+.buyPage{
+    width: 1024px;
+    background: white;
+}
+.buyPage .MenuItem_select{
+    background:#d7e7fc;
+    box-shadow: 0px 0px 75px #5297ef;
+    margin-top: 25px;
+}
+.buyPage .MenuItem_select .menuTable{
+    width:865px;
+    border:0;
+}
+.buyPage .MenuItem_select .menuTable .menuItems{
+    color:black;
+    fontSize: 13px;
+    width:159px;
+    text-align: center;
+}
+.buyPage .MenuItem_select .menuTable .menuImg{
+    width: 30px;
+}
+.item_select{
+    background: cornflowerblue;
+}
+.insuranceName{
+    margin-top: 30px;
+}
+.insuranceName .nameTitle{
+    padding-left: 50px;
+    font-size: 16px;
+    font-weight: bold;
+    color: rgb(44, 126, 235);
+}
+.insurancePlan {
+    border-style: solid;
+    border-width: thin;
+    border-color: aliceblue;
+    box-shadow: 0 0 25px lightgrey;
+    width: 820px;
+    margin-left: 42px;
+}
+.insurancePlan .planContain {
+    border: 0;
+    margin-left: 82px;
+}
+.insurancePlan .insAdd {
+    border: 0;
+    margin-left: 0px;
+    width: 90%;
+}
+.insurancePlan .planContain .plan_tr{
+    height:37px;
+    text-align: right;
+    width: 150px;
+    background-color:#F0F0F0;
+}
+.insurancePlan .planContain .plan_line{
+    border-bottom-style: solid;
+    border-bottom-color: cornflowerblue;
+}
+.insurancePlan .planContain .plan_tr .plan_td_1{
+    text-align:right;
+    width:150px;
+
+}
+.insurancePlan .planContain .plan_tr .plan_td_2{
+    width:120px;
+    text-align: left;
+}
+.insurancePlan .planContain .plan_tr .plan_td_3{
+    text-align:left;
+    width:355px;
+}
+.insurancePlan .insWarn{
+    color:blue;
+    padding-top:5px;
+    padding-left:5px;
+    margin-left: 82px;
+    width: 643px;
+    text-indent: 25px;
+}
+.insurancePlan .addInsPro{
+    margin-left: 82px;
+}
+.nextTo{
+    background: #4c93e1;
+    color: #FFFFFF;
+    padding: 8px;
+    border: none;
+    width: 90px;
+    border-radius: 2px;
+    text-align: center;
+    cursor: pointer;
+}
+/*carInsuranceBuyPage*/
+/**/
+/**/
+/**/
+.cart-header {
+    position: relative;
+    margin-top: 12px;
+}
+.close{
+    background: url(../../../build/images/close.png) no-repeat 0px 0px;
+    cursor: pointer;
+    width: 28px;
+    height: 28px;
+    position: absolute;
+    right: 8px;
+    top: 1.5px;
+    transition: color 0.2s ease-in-out;
+}
+.carPlan{
+    padding-top: 10px;
+}
+.carPlan .carPlan-detail-masthead {
+    background-color: #f1f1f1;
+    border-width: 1px 0;
+    border-color: #e3e3e3;
+    border-style: solid;
+    color: #999;
+}
+
+.carPlan .carPlan-detail-masthead li {
+    display: block;
+    float: left;
+    border-right: 1px solid #e3e3e3;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.carPlan .id{
+    float:left;
+    width:5%;
+    border-right:1px solid #e3e3e3;
+    text-align:center;
+
+}
+.carPlan .what {
+    float:left;
+    width:20%;
+    border-right:1px solid #e3e3e3;
+    text-align:center;
+
+}
+.carPlan .type{
+    float:left;
+    width:55%;
+    border-right:1px solid #e3e3e3;
+    text-align:center;
+
+}
+.carPlan .attach{
+    float:left;
+    width:15%;
+    border-right:1px solid #e3e3e3;
+    text-align:center;
+
+}
+.carPlan .delete{
+    float:left;
+    width:5%;
+    border-right:1px solid #e3e3e3;
+    text-align:center;
+}
+.cart-header .carPlan-detail-item-list {
+    margin-top: 2px;
+    border-top: 1px solid #f1f1f1;
+}
+.cart-header .carPlan-detail-item-list .item {
+    padding: 0px 0;
+    border-bottom: 1px solid #f1f1f1;
+    height: 30px;
+}
+.cart-header .carPlan-detail-item-list .type {
+    text-align: center;
+}
+.cart-header .carPlan-detail-item-list .type .check{
+    margin:0px 8px;
+}
+.cart-header .carPlan-detail-item-list .attach {
+    text-align: center;
+}
+.cart-header .carPlan-detail-item-list .delete{
+    color: #0287ca;
+    text-align: center;
+    cursor: pointer;
+}
+.carPlanInfo{
+    border-bottom-style: ridge;
+    border-bottom-color: #d7e7fc;
+    padding: 15px 0px 30px 0px;
+}
+.sect_title{
+    margin: 0px 10px 0px 20px;
+}
+.carPlanInfo .sect_car .sect_myCar{
+    width: 272px;
+    height: 33px;
+    margin: 0px 20px 0px 24px;
+}
+.carPlanInfo .sect_company .openCompanyInput{
+    padding: 6px 99px 6px 99px;
+}
+.carPlanInfo .sect_relative .sect_myRelative{
+    width: 272px;
+    height: 33px;
+    margin: 0px 20px 0px 24px;
+}
+.carPlanInfo .createNew_man,.createNew_car{
+    padding: 5px 10px 5px 10px;
+    margin-left: 90px;
+    background-color: #d7e7fc;
+    border-color: #d7e7fc;
+    border-radius: 5px;
+}
+.insurancePlan .createNew_man{
+    padding: 2px 5px 2px 5px;
+    margin-left: 29px;
+    background-color: #6495ed;
+    border-color: #6495ed;
+    border-radius: 2px;
+    color: aliceblue;
+    font-size: smaller;
+}
+.margin10{
+    margin-top: 10px;
+}
+.jqxNum .addHaveInsNum{
+    height: 34px;
+    border-radius: 5px;
+    width: 237px;
+}

@@ -1,0 +1,41 @@
+@charset "utf-8";
+/*!
+ * @名称：layout.css
+ * @功能：自定义样式
+ * @作者：haibao
+ * @日期：2014-05-22
+ */
+.w330 {width: 330px;margin: 0 auto;}
+.mt10 {margin-top: 10px;}
+.c7b {color: #7B7B7B;}
+.c46 {color: #4677BD;}
+.f16 {font-size: 16px;}
+
+/* header */
+.sp {color:#707070;margin: 0 2px;}
+#navs a {color: #EBEBEB;font-size: 18px;line-height: 60px;display: inline-block;margin-left: 2em;}
+#navs a.active,#navs a:hover {text-decoration: none;color: #96E443;}
+
+/* container-info */
+.container-info {border: 1px solid #C5C5C5;border-radius: 2px;-webkit-border-radius: 2px;-moz-border-radius: 2px;box-shadow: 0 0 3px #ccc;-webkit-box-shadow: 0 0 3px #ccc;}
+.step_inner_f1 {color: #FFFFFF;text-align: center;width: 100px;}
+.step_inner {color: #FFFFFF;text-align: center;width: 100px;margin: 0 auto;}
+.step_line {width: 720px;background-color: #9E9F9F;height: 6px;position: absolute;top: 50%;left: 50%;margin: -18px auto auto -360px;z-index: 1;}
+.content_info {background-color: #ffffff;padding: 45px 50px 900px;}
+.self_control_group {padding-top:25px;}
+.self_label {width: 100px;float: left;margin-left: 220px;line-height: 33px;font-size: 14px;text-align: center}
+.related_label {width: 100px;float: left;line-height: 33px;font-size: 14px;text-align: center}
+.car_label {width: 145px;float: left;line-height: 35px;font-size: 14px;text-align: right;margin-right: 20px}
+.self_controls {display: table-cell;float: none;vertical-align: top;width: auto;}
+.self_input{width: 300px;border: 1px solid #C5C5C5;height: 35px;line-height: 35px;vertical-align: middle;-moz-border-radius: 3px;-webkit-border-radius: 3px;-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) inset;padding: 0 10px;}
+.self_input:focus:focus {border: 1px solid #4677BD;box-shadow: 0 0 2px #ddd;-webkit-box-shadow: 0 0 3px #ddd;}
+.car_input{width: 200px;border: 1px solid #C5C5C5;height: 35px;line-height: 35px;vertical-align: middle;-moz-border-radius: 3px;-webkit-border-radius: 3px;-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.06) inset;padding: 0 10px;}
+.car_input:focus:focus {border: 1px solid #4677BD;box-shadow: 0 0 2px #ddd;-webkit-box-shadow: 0 0 3px #ddd;}
+.frm_tips {color: #C1C2C3;padding-top: 4px;width: 320px;}
+.toolBar {margin-top: 30px;text-align: center;padding: 20px 0 20px 0;border-top: 1px solid #D2D2D2;box-shadow: 0 1px 0 #FBFBFB inset;-webkit-box-shadow: 0 1px 0 #FBFBFB inset;}
+.saveBtn {border-radius: 5px;-webkit-border-radius: 5px;-moz-border-radius: 5px;cursor: pointer;display: inline-block;font-size: 18px;height: 35px;line-height: 35px;overflow: visible;padding: 0 25px;text-align: center;text-decoration: none;vertical-align: middle;}
+.btn_primary {background-color: #4c93e1;color: #FFFFFF;border: 1px solid #3EAC27;}
+.btn_default {background-color: #F1F1F1;color: #000000;border: 1px solid #D1D1D1;}
+.saveBtn:hover {text-decoration: none;}
+.phoneYzm {width: 145px;}
+.carInfo {float:left; width:100%; margin-top:25px; margin-left:30px}

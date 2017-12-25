@@ -1,0 +1,178 @@
+.lifeTitle{
+    padding-top: 13px;
+    color: #0170ca;
+    text-align: center;
+    padding-bottom: 13px;
+    font-size: 22px;
+}
+.lifeIntroduce .titleLine{
+    border-top: 5px solid #0170ca;
+}
+.proIntro{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+.lifeIntroduce .detailTitle{
+    color: #0170ca;
+    font-size: 1.5em;
+}
+
+.proIntro p{
+    text-align: center;
+}
+.proIntro .star{
+    width: 99%;
+    text-align: center;
+}
+.productIntro {
+    overflow: hidden;
+    zoom: 1;
+    margin-top: 10px;
+}
+.lyys{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.lyys .yscontain{
+    border-width: 0px 0px 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgb(204, 204, 204);
+    width: 80%;
+    margin-left: 9%;
+}
+.lyys .yscontain .search{
+    background: #4c93e1;
+    color: #FFFFFF;
+    padding: 3px;
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+    text-align: center;
+    cursor: pointer;
+}
+.bzfw{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.kfjx{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.jlsm{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.shfw{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+    padding-top: 15px;
+}
+.proleft {
+    float: left;
+    width: 30%;
+    height: 290px;
+    overflow: hidden;
+    margin-left: 8%;
+}
+.proright {
+    float: left;
+    width: 60%;
+    overflow: hidden;
+    padding-left:5em;
+}
+.proBuyBtn .proBtn{
+    background: #4c93e1;
+    color: #FFFFFF;
+    padding: 10px;
+    border: none;
+    width: 100px;
+    margin-top: 25px;
+    margin-left: 425px;
+    text-align: center;
+    cursor: pointer;
+}
+.line-height25 {
+    line-height: 25px;
+    text-align: -webkit-left;
+}
+.line-height35 {
+    line-height: 35px;
+    text-align: -webkit-left;
+    padding-left: 7%;
+}
+.bold {
+    font-weight: bold;
+}
+
+.pro_tese dl {
+    width: 50%;
+    float: left;
+    margin-top: 20px;
+    text-align: left;
+}
+.pro_tese dt {
+    font-size: 15px;
+    font-weight: bold;
+    color: #1a4531;
+    font-family: "微软雅黑";
+}
+.pro_tese ul {
+    margin-left: 70px;
+}
+.pro_tese dd ul li {
+    line-height: 30px;
+    font-family: "微软雅黑";
+    font-size: 14px;
+}
+.risk{
+    text-align: left;
+    padding-left: 8%;
+}
+.red {
+    color: #1a4531;
+}
+.bxj {
+    margin-top: 15px;
+}
+.text-indent2em {
+    text-indent: 2em;
+    padding-left: 7em;
+}
+.bzfwp{
+    text-align: left;
+    padding-left: 7em;
+}
+.textSize{
+    font-size: 1em;
+}
+.lizi {
+    margin-left: 25px;
+    width: 90%;
+}
+.lizi p {
+    line-height: 25px;
+}
+.shfw_dl {
+    width: 90%;
+    line-height: 25px;
+    margin-top: 15px;
+    margin-bottom: 4em;
+
+}
+.shfw_dl dt {
+    padding-left: 15px;
+}
+.bznr{
+    margin-left: 25px;
+    width: 90%;
+}

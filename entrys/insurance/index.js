@@ -5,7 +5,7 @@ import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, browserHistory, IndexRoute } from 'react-router';
 import App from './modules/App.jsx';
-import MPage from './components/MPage.jsx';
+import MainPage from './components/MainPage.jsx';
 import HomePage from './components/HomePage.jsx';
 import MainSection from './modules/MainSection.jsx';
 
@@ -14,7 +14,7 @@ render((
         <Route path={window.App.getAppRoute()} component={App}>
             <IndexRoute component={HomePage}/>
             <Route path={window.App.getAppRoute()+"/"} component={HomePage}/>
-            <Route path={window.App.getAppRoute()+"/mainPage"} component={MPage}/>
+            <Route path={window.App.getAppRoute()+"/mainPage"} component={MainPage}/>
             <Route path={window.App.getAppRoute()+"/productCenter"} component={MainSection}/>
             <Route path={window.App.getAppRoute()+"/news"} component={MainSection}/>
             <Route path={window.App.getAppRoute()+"/personalCenter"} component={MainSection}/>

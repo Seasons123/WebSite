@@ -3,6 +3,17 @@ body, h1, h2, h3, h4, h5, h6, hr, p,blockquote, dl, dt, dd, ul, ol, li,pre,form,
     margin: 0;
     padding: 0;
 }
+/** 设置默认字体 **/
+body, button, input, select, textarea {
+    font: 14px/150% "Microsoft YaHei", "微软雅黑", "sans-serif,Arial, Helvetica";
+    color: #000000;
+}
+
+body {
+    /*background: #f5f5f5 url(../images/rebc.gif);*/
+    background: url(../../../build/images/sky.png) top center no-repeat;
+}
+
 
 h1, h2, h3, h4, h5, h6 {
     font-size: 100%;
@@ -14,16 +25,6 @@ em {
 
 a {
     color: #0287ca;
-    text-decoration: none;
-}
-
-a:link {
-    color: #333333;
-    text-decoration: none;
-}
-
-a:visited {
-    color: #333333;
     text-decoration: none;
 }
 
@@ -74,12 +75,27 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 .w1008 {
-    width: 1040px;
+    width: 1009px;
 }
-
+.w890 {
+    width: 890px;
+}
+.w1100 {
+    width: 1100px;
+}
+.w1500{
+    width: 1500px;
+    min-width: 1100px;
+}
+.w900{
+    width: 900px;
+}
 /*top*/
 .top {
-    height: 110px;
+    height: 95px;
+}
+.topHomePage {
+    height: 90px;
 }
 
 .top .logo {
@@ -88,9 +104,9 @@ h1,h2,h3,h4,h5,h6 {
 
 .top .tell {
     width: 356px;
-    /* background: url(../../../build/images/bg_05.png) no-repeat 0px 20px; */
-    height: 110px;
-    color: #000000;
+    /* background: url(../images/bg_05.png) no-repeat 0px 20px; */
+    height: 90px;
+    color: #323232;
     text-align: center;
     line-height: 120px;
     padding-left: 10px;
@@ -98,13 +114,25 @@ h1,h2,h3,h4,h5,h6 {
     font-weight: bold;
 }
 
+.topHomePage .tellHomePage {
+    width: 356px;
+    height: 90px;
+    color: #323232;
+    text-align: center;
+    line-height: 90px;
+    padding-left: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
 .top .tell i {
     font-size: 20px;
     font-weight: bold;
 }
 
-/*nav-top*/
-.nav-top {
+/*nav*/
+.nav {
     position: relative;
     margin: 0 auto;
     background: url(../../../build/images/nav_bg.jpg) repeat-x;
@@ -113,7 +141,7 @@ h1,h2,h3,h4,h5,h6 {
     z-index: 900;
 }
 
-.nav-top ul li {
+.nav ul li {
     float: left;
     width: 130px;
     height: 43px;
@@ -122,7 +150,7 @@ h1,h2,h3,h4,h5,h6 {
     margin-left: 2px;
 }
 
-.nav-top a {
+.nav a {
     display: block;
     padding: 0 16px;
     line-height: inherit;
@@ -180,7 +208,28 @@ h1,h2,h3,h4,h5,h6 {
     float: left;
 }
 
-.link a {
+.link a.user {
+    display: block;
+    width: 145px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    transition: all .2s;
+    color: #000000;
+    font-size: 15px;
+}
+.link i.user {
+    display: block;
+    width: 145px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    transition: all .2s;
+    color: #000000;
+    font-size: 15px;
+}
+
+.link i.login-btn {
     display: block;
     width: 54px;
     height: 26px;
@@ -193,7 +242,7 @@ h1,h2,h3,h4,h5,h6 {
 
 }
 
-.link a:hover {
+.link i.login-btn:hover {
     background: #059bef;
     border: 1px #eee solid;
     border-radius: 2px;
@@ -201,7 +250,7 @@ h1,h2,h3,h4,h5,h6 {
     text-decoration: none;
 }
 .plogin{
-    padding-top:50px;
+    padding-top:45px;
 }
 .other-login {
     font-size: 14px;
@@ -421,6 +470,7 @@ h1,h2,h3,h4,h5,h6 {
     border-left: medium none;
     border-top: medium none;
     color: #3AAB31;
+    border: none;
 }
 
 .dtline {
@@ -1134,7 +1184,7 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
 /*产品中心*/
 .product, .partner {
     border: 1px solid #b1cee8;
-    margin-top: 20px;
+    margin-top: 10px;
     overflow: hidden;
 }
 
@@ -1150,7 +1200,7 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
     padding-right: 10px;
 }
 
-.product_B span a, .company span a, .partner_B span a {
+.product_B span a, .partner_B span a {
     color: #333;
     font-weight: normal;
     font-size: 12px;
@@ -1162,13 +1212,14 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
 }
 
 .product_img {
-    width: 183px;
+    width: 485px;
     margin: 9px;
     float: left;
+    cursor: pointer;
 }
 
 .product_img img {
-    width: 183px;
+    width: 470px;
     height: 129px;
 }
 
@@ -1181,7 +1232,7 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
     opacity: .8;
     /*其他，透明度50%*/
     margin-top: -25px;
-    width: 183px;
+    width: 485px;
     height: 25px;
 }
 
@@ -1214,6 +1265,9 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
 .mar_20 {
     margin-top: 20px;
 }
+.mar_10{
+    margin-top: 10px;
+}
 
 .overflow {
     overflow: hidden;
@@ -1224,7 +1278,7 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
     width: 340px;
     position: relative;
     float: left;
-    height: 255px;
+    height: 261px;
 }
 
 .company_B, .news_B {
@@ -1235,7 +1289,7 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
     font-size: 14px;
 }
 
-.company span, .news span {
+.company span.about-more, .news span.news-more {
     position: absolute;
     right: 0;
     top: 0;
@@ -1260,7 +1314,7 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
 }
 
 .mar_L {
-    margin: 20px 15px 0px 15px;
+    margin: 10px 15px 0px 15px;
 }
 
 .news_B {
@@ -1375,7 +1429,9 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
 	color: #fff;
     background: #2F8DBC;
     padding: 5px 0;
-    margin-top: 20px;
+    width:100%;
+    position:fixed;
+    bottom:0
 } /*原色：#0058a0*/
 .footer2 {
 	color: #fff;

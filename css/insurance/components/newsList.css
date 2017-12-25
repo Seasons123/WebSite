@@ -1,0 +1,19 @@
+.News{
+    padding: 0;
+    margin: 0;
+}
+.inline{
+    display: inline-block;
+}
+.title{
+    display: block;
+    width: 98%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 14px;
+}
+
+a.news_a {
+    cursor: pointer;
+}

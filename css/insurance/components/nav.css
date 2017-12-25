@@ -59,7 +59,7 @@
     display: block;
 }
 
-#navigation .link a:hover, #nav .active a {
+#navigation .link a:hover, #nav-home .active a {
     background-color: #0066b3;
 }
 
@@ -101,13 +101,13 @@
     padding-right: 16px;*/
     float: left;
     width: 200px;
-    height: 40px;
-    padding-top: 16px;
+    height: 0px;
+    padding-top: 5px;
     padding-right: 16px;
 }
 
 /*
-.nav {
+.nav-home {
     /*float: left;
     padding-top: 24px;
     padding-left: 36px;/
@@ -116,7 +116,7 @@
     padding-left: 500px;
 } */
 
-.nav ul li {
+.nav-home ul li {
     float: left;
 
     font-size: 18px;
@@ -158,18 +158,18 @@
 }
 
 /* hoverѡ�������ָ�������ϸ���������������ʽ
-.nav ul li a.nav_a:hover{
+.nav-home ul li a.nav_a:hover{
     background: #0066b3;
     color:#fff;
     text-decoration: none;
 }*/
 
-.nav .nav_a_hover {
+.nav-home .nav_a_hover {
     color: #fff;
     background: #1693f1;
 }
 
-.nav .nav_a_hover:hover {
+.nav-home .nav_a_hover:hover {
     color: #fff;
     background: #1693f1;
 }

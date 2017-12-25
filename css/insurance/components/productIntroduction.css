@@ -1,0 +1,447 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+.mframe {
+    width: 725px;
+}
+.car_mframe{
+    width: 100%;
+}
+.mcontent {
+    margin: 10px auto;
+    width: 691px;
+    text-align: left;
+}
+.car_mcontent {
+    margin: 10px auto;
+    width: 920px;
+    text-align: left;
+}
+.crumb {
+    width: 691px;
+}
+
+.pointline {
+    background: url("../../../build/images/repeatimg.gif") repeat-x 0px 0px;
+    margin: 0px auto;
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    clear: both;
+}
+
+
+.columntitle {
+    width: 100%;
+    padding-top: 15px;
+    float: left;
+}
+
+
+.grayline {
+    background: rgb(226, 226, 226);
+    width: 100%;
+    height: 1px;
+    overflow: hidden;
+    margin-bottom: 8px;
+}
+
+
+.pro_detail_list {
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+}
+
+
+.crumb ul {
+    overflow: hidden;
+    -ms-zoom: 1;
+}
+
+.crumb li.location {
+    margin: 0px;
+    padding: 0px;
+    color: rgb(0, 142, 86);
+    font-weight: bold;
+}
+.crumb li.location {
+    width: auto;
+    font-weight: normal;
+}
+.crumb li {
+    margin: 0px 4px;
+    color: rgb(0, 142, 86);
+    float: left;
+}
+li {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.crumb li a {
+    color: rgb(0, 142, 86);
+}
+.crumb li.arrow {
+    background: url("../../../build/images/png_ico_all.gif") no-repeat -128px 5px !important;
+    width: 6px;
+    height: 15px;
+}
+.crumb li.redarrow {
+    background: url("../../../build/images/png_ico_all.gif") no-repeat 0px -118px !important;
+    width: 6px;
+    height: 15px;
+}
+.columntitle {
+    width: 100%;
+    padding-top: 5px;
+    float: left;
+}
+.mcontent h1 {
+    color: rgb(22, 135, 80);
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+}
+.pages {
+    color: rgb(151, 151, 151);
+    line-height: 14px;
+    font-family: Arial;
+    font-size: 11px;
+    float: right;
+}
+.pages a.page_up {
+    background: url("../../../build/images/png_ico_all.gif") no-repeat 0px -50px;
+    width: 8px;
+    text-indent: -20em;
+    overflow: hidden;
+    margin-right: 10px;
+}
+.pages a.page_down {
+    background: url("../../../build/images/png_ico_all.gif") no-repeat -13px -50px;
+    width: 8px;
+    text-indent: -20em;
+    overflow: hidden;
+    margin-left: 10px;
+}
+.pages a {
+    width: 20px;
+    text-align: center;
+    color: rgb(151, 151, 151);
+    margin-right: 3px;
+    margin-left: 3px;
+}
+.pages a {
+    float: left;
+    display: block;
+}
+.pages a.current {
+    background: url("../../../build/images/png_ico_all.gif") no-repeat -43px -50px;
+    height: 16px;
+}
+.pro_detail_list {
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+}
+.pro_detail_list h1 {
+    color: #ff7800;
+    float: none;
+}
+.mcontent h1 {
+    color: rgb(22, 135, 80);
+    line-height: 22px;
+    font-size: 13px;
+    font-weight: bold;
+    float: left;
+}
+
+.pro_detail_list h1 a {
+    color: #ff7800;
+}
+
+
+.pro_detail_list .left {
+    float: left;
+    width: 172px;
+    padding-top: 5px;
+    margin-right: 12px;
+}
+
+
+.pro_detail_list img {
+    margin-top: 8px;
+}
+
+
+.pro_detail_list .right {
+    float: left;
+    width: 504px;
+    padding-top: 5px;
+}
+
+
+.pro_detail_list .right fieldset {
+    float: left;
+    width: 504px;
+    border: none;
+}
+
+.pro_detail_list .right fieldset p {
+    float: left;
+    line-height: 18px;
+}
+.pro_detail_list .assurance {
+    float: left;
+    width: 155px;
+    margin-right: 18px;
+    display: inline;
+}
+.pro_detail_list .carPro {
+    float: left;
+    width: 215px;
+    margin-left: 12px;
+    display: inline;
+    background-color: #d7e7fc;
+    margin-top: 10px;
+    height: 322px;
+}
+.pro_detail_list .car{
+    float: left;
+    width: 100%;
+    padding-top: 5px;
+}
+.pro_detail_list .car label{
+    display: block;
+}
+.pro_detail_list .car textarea{
+    width: 210px;
+    height: 215px;
+    margin-left: 3px;
+    resize:none;
+
+}
+.pro_detail_list .checkText{
+    padding-left: 5px;
+}
+.pro_detail_list .checkLab{
+    width: 110px;
+    float: left;
+    padding-top: 5px;
+    margin-right: 12px;
+}
+.pro_detail_list .buyCar{
+    width:56px;
+    float: left;
+    padding-top: 5px;
+    cursor: pointer;
+}
+
+.pro_detail_list .car h3{
+    margin-top: 10px;
+    background-color: inherit;
+}
+
+
+#container .title {
+    margin-top: 3px;
+}
+.pro_detail_list .right fieldset label {
+    float: left;
+}
+.pro_detail_list .title {
+    width: 100%;
+    color: #168750;
+    border-bottom: 2px solid #ccc;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.pro_detail_list .right fieldset label {
+	text-indent: 0em;
+    float: left;
+}
+.pro_detail_list .period {
+    float: left;
+    width: 63px;
+    margin-right: 18px;
+    display: inline;
+}
+.pro_detail_list .amount {
+    float: left;
+    width: 158px;
+    margin-right: 18px;
+    display: inline;
+}
+.pro_detail_list .premium {
+    float: left;
+    width: 60px;
+    display: inline;
+}
+.pro_detail_list .btm_area {
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+}
+.pro_detail_list .car_btm_area {
+    float: left;
+    width: 100%;
+    padding-bottom: 5px;
+    padding-top: 20px;
+}
+.pro_detail_list .left {
+    float: left;
+    width: 172px;
+    padding-top: 5px;
+    margin-right: 12px;
+}
+.pro_detail_list .right {
+    float: left;
+    width: 504px;
+    padding-top: 5px;
+}
+.pro_detail_list .left {
+    float: left;
+    width: 172px;
+    padding-top: 5px;
+    margin-right: 12px;
+}
+.pro_detail_list h2 {
+    color: #0ea9cf;
+    float: none;
+    font-weight: normal;
+}
+.mcontent h2 {
+    color: rgb(132, 132, 132);
+    font-weight: bold;
+}
+h2 {
+    color: rgb(0, 125, 196);
+    line-height: 28px;
+    font-size: 12px;
+    float: left;
+}
+.pro_detail_list .right {
+    float: left;
+    width: 504px;
+    padding-top: 5px;
+}
+.pro_detail_list .btm_btn {
+    float: right;
+}
+.buyhelp_frame {
+    float: left;
+    width: 191px;
+    text-align: left;
+    position: relative;
+    height: 26px;
+    margin-top: 10px;
+}
+.buyhelp_bg {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    margin-top: 7px;
+    text-align: center;
+}
+
+.buyhelp_text {
+    margin: 10px auto 0 auto;
+    width: 140px;
+    text-align: left;
+}
+.buyhelp_text ul {
+    float: left;
+    margin-top: 5px;
+}
+.buyhelp_btn {
+    background: url("../../../build/images/imageset1.jpg") no-repeat ;
+    width: 191px;
+    height: 26px;
+    margin-top: 10px;
+    float: left;
+    cursor: pointer;
+}
+.detail_btn {
+    background: url("../../../build/images/imageset2.jpg") no-repeat ;
+    width: 112px;
+    height: 24px;
+    margin-top: 10px;
+    float: left;
+}
+.detail_btn_input{
+    width: 112px;
+    margin-top: 10px;
+    float: left;
+}
+.detail_btn a {
+    width: 112px;
+    height: 24px;
+    display: block;
+}
+.buyhelp_btn a {
+    width: 112px;
+    height: 24px;
+    display: block;
+}
+.pro_detail_list h1 {
+    color: #ff7800;
+    float: none;
+}
+.pro_detail_list h2 {
+    color: #0ea9cf;
+    float: none;
+    font-weight: normal;
+}
+#Pagination1,#Pagination2{
+	text-align: right;
+}
+.glyphicon-star{
+    color: #fdd000;
+    font-size:.8em;
+    margin-left: 10px;
+}
+.lifeSearch{
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.lifeSearch .searchContain{
+    float: left;
+}
+.lifeSearch .searchContain_pro{
+    width: 35%;
+}
+.lifeSearch .searchContain_com{
+    width: 35%;
+}
+.lifeSearch .searchContain_ins{
+    width: 15%;
+}
+.lifeSearch .searchContain_sea{
+    width: 15%;
+}
+.lifeSearch .search {
+    background: #4c93e1;
+    color: #FFFFFF;
+    padding: 3px;
+    border: none;
+    width: 90px;
+    border-radius: 5px;
+    margin-top: 17px;
+    text-align: center;
+    cursor: pointer;
+}
+.lifeSearch .searchTitle{
+    background-color: inherit;
+}
+.lifeSearch .searchInput{
+    width: 95%;
+    border-radius: 5px;
+}
+.lifeSearch .searchSelect {
+    width: 90%;
+}
+.quickSearchSpanText{
+    margin-left: 5px;
+}

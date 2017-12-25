@@ -1,0 +1,71 @@
+.consultationHR{
+    width: 994px;
+    border-style: solid;
+    border-bottom-width: 2px;
+    border-color: #d7e7fc;
+}
+.questionDetailContain .faqs {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.questionDetailContain .faqs dt {
+    font-weight: bold;
+    background: url(../../../build/images/q.gif) 0 4px no-repeat;
+    padding: 3px 0 15px 30px;
+    position: relative;
+}
+.questionDetailContain .faqs dd {
+    background: url(../../../build/images/a.gif) 0 2px no-repeat;
+    padding:  3px 0 15px 30px;
+    position: relative;
+    color: #333;
+}
+.questionDetailContain .faqs .questionImage {
+     width: 300px;
+ }
+.questionDetailContain .faqs .questionImageText{
+    width: 70px;
+    float: left;
+}
+.questionDetailTitle .questionTheme {
+    color: #0093de;
+    text-align: center;
+    padding-top: 10px;
+}
+.questionDetailTitle .questionFootnote .icon-calendar{
+    float: right;
+    margin-top: 12px;
+}
+.questionDetailTitle .questionFootnote .icon-comment{
+    float: right;
+    margin-left: 15px;
+    margin-top: 12px;
+}
+.questionDetailTitle .questionFootnote .backQuestionList{
+    padding: 4px;
+    border-radius: 3px;
+    background-color: #d7e7fc;
+    border-color: aliceblue;
+    margin-bottom: 5px;
+}
+.question-quiz{
+    padding-left:20px;
+}
+.question-quiz .quizArea{
+    resize: none;
+    width: 450px;
+    border-radius: 5px;
+    height: 150px;
+}
+.question-quiz .quizBtn{
+    background: #4c93e1;
+    border-color: #4c93e1;
+    border-radius: 5px;
+    padding: 6px 15px 6px 15px;
+    margin-top: 15px;
+}
+.question-quiz .quizImg{
+    height:200px;
+    width:300px;
+    margin:2px;
+}

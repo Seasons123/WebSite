@@ -1,0 +1,59 @@
+.menu h3 {
+    background: url("../../../build/images/daohang01.jpg" ) no-repeat top;
+    padding-left: 30px;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.font_15 {
+    font-size: 15px;
+}
+.menu ul li{
+    background: url("../../../build/images/blue.gif") no-repeat 0;
+    height: 36px;
+    line-height: 36px;
+    border-bottom: 1px dashed #CCCCCC;
+    padding-left: 20px;
+}
+.pro_R .pro_bg {
+    background: url("../../../build/images/bread.jpg" ) repeat-x;
+    height: 39px;
+    line-height: 39px;
+    border-bottom: 1px solid #CCCCCC;
+}
+.article {
+    padding: 20px;
+}
+.article h3 {
+    color: #0093de;
+    background-color: #d7e7fc;
+    height: 18px;
+}
+.text {
+    text-align: center;
+}
+.font_15 {
+    font-size: 15px;
+}
+
+.article .art_W {
+    color: #999;
+    text-indent: 0;
+}
+.pro_R p {
+    text-indent: 2em;
+    line-height: 25px;
+}
+.visual{
+	border-top:1px dashed #CCCCCC;
+	padding: 0px 0px 20px 0px;
+}
+.productDetails{
+	margin-top: 10px;
+	border-top:1px dashed #CCCCCC;
+}
+.subtitle{
+	color: #337fe5;
+}
+
+
