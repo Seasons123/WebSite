@@ -128,9 +128,16 @@ var MainPage=React.createClass({
                                     <span className="news-more"><i href="javascript:void(0)">more&gt;&gt;</i></span>
                                 </Link>
                                 <div className="news_L">
-
-                                    <div>
-                                    </div>
+                                    <ul>
+                                        <li><a href="#">保监会要求进一步规范保险理赔服务</a></li>
+                                        <li><a href="#">“营改增”后个人保险代理人佣金算法明确！</a></li>
+                                        <li><a href="#">2016年“7·8全国保险公众宣传日”主题活动在京举行</a></li>
+                                        <li><a href="#"> 互联网保险排雷紧锣密鼓 商业模式多元化成发展趋势</a></li>
+                                        <li><a href="#"> 保险合规管理将趋紧 罚款上限或作适度上调</a></li>
+                                        <li><a href="#">学习总书记“七一”讲话精神 不断开创保险工作新局面 保监会召开庆祝建党95周年大会</a></li>
+                                        <li><a href="#">“营改增”对保险公司保费核算的影响简析</a></li>
+                                        <li><a href="#">滴滴出行获中国人寿6亿美元战略投资</a></li>
+                                    </ul>
                                 </div>
                             </div>
 
