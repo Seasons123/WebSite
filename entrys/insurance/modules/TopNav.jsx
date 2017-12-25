@@ -27,7 +27,6 @@ var TopNav=React.createClass({
     },
     initValue:function(){
         if(SyncStore.getNote()==false) {
-            var url = "/func/insurance/getLogin";
             ProxyQ.query(
                 'get',
                 url,
@@ -40,45 +39,16 @@ var TopNav=React.createClass({
                         SyncStore.setLoginName(name);
                         this.componentWillReceiveProps();
                     }
-
                 }.bind(this),
-                function (xhr, status, err) {
-                    console.error(this.props.url, status, err.toString());
-                }.bind(this)
             );
         }
     },
-    exit:function () {
-        if(flag==0) {
-            var url = "/func/auth/webLogout";
-            var params = {};
 
-            ProxyQ.query(
-                'get',
-                url,
-                params,
-                null,
-                function (res) {
-                    SyncStore.initNote();
-                    SyncStore.setLoginName({});
-                    console.log("退出成功！");
-                    flag = 1;
-                    document.getElementById("goToOther").click();
-                    // this.componentWillReceiveProps();
-
-                }.bind(this),
-                function (xhr, status, err) {
-                    console.error(this.props.url, status, err.toString());
-                }.bind(this)
-            );
-
-        }
-    },
 
     render:function(){
         return(
             <div>
-                <div className="top w1008 margin"  onLoad={this.initValue()}>
+                <div className="top w1008 margin"  >
                     <div className="logo">
                         <a>
                             <img src={window.App.getResourceDeployPrefix()+"/images/logo_02.png"} style={{width:'432px', height:'110px'}}></img></a>
@@ -86,29 +56,11 @@ var TopNav=React.createClass({
                     <div className="fr">
                         <ul className="link">
                             <li className="tell">咨询热线： <i>0531-81188593</i></li>
-                            {this.state.loginState ?
-                                <li className="plogin">
-                                    <i  className="user" onClick={this.exit} style={{float:'right',width:'20px',cursor:'pointer',textDecoration:'underline'}} >
-                                        <i className='icon-off'></i>
-                                        <Link to={window.App.getAppRoute() + "/mainPage"} id="goToOther"></Link>
-                                    </i>
-                                    <a className="user" style={{float:'right',width:'95px'}} href="javascript:void(0)">
-                                        <i className='icon-user'></i>
-                                        <strong style={{marginLeft:'10px'}}>{this.state.userName}</strong>
-                                    </a>
-
-                                </li>
-
-                             :
                                 <li className="plogin">
                                     <Link to={window.App.getAppRoute() + "/login"}>
-
                                         <i className="login-btn" onClick={this.click.bind(null,"/mainPage")}>登录</i>
-
                                     </Link>
                                 </li>
-                            }
-
                         </ul>
                     </div>
                 </div>

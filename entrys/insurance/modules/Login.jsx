@@ -53,30 +53,6 @@ var Login=React.createClass({
                     validateCode: validate
                 };
 
-                ProxyQ.query(
-                    'post',
-                    url,
-                    params,
-                    null,
-                    function (res) {
-                        var reCode = res.reCode;
-                        var realName = res.loginName;
-                        if (reCode !== undefined && reCode !== null && (reCode == 0 || reCode == "0")) { //登陆成功
-                            SyncStore.setNote(); //设置全局登录状态为true
-                            SyncStore.setResult(true);
-                            SyncStore.setLoginName(realName);
-
-                            console.log("登陆成功！");
-                            flag = 1;
-                            document.getElementById("goToOther").click();
-                        }else{
-                            alert("登录失败！");
-                        }
-                    }.bind(this),
-                    function (xhr, status, err) {
-                        console.error(this.props.url, status, err.toString());
-                    }.bind(this)
-                );
             }
 
         }
@@ -167,21 +143,7 @@ var Login=React.createClass({
                 email:email,
                 phoneNum:phoneNum,
             };
-            ProxyQ.query(
-                'post',
-                url,
-                params,
-                null,
-                function(ob) {
-                    var re = ob.re;
-                    if(re != undefined && re != null ){
-                        this.setState({view: 'login'})
-                    }
-                }.bind(this),
-                function(xhr, status, err) {
-                    console.error(this.props.url, status, err.toString());
-                }.bind(this)
-            );
+
         }
     },
 
@@ -246,47 +208,7 @@ var Login=React.createClass({
 
         var ins=this; //保存this
         var url='http://sms.cloud.hbsmservice.com:8080/sms_send2.do';
-        $.ajax({
-            type    : 'POST',
-            url     : url,
-            data    : params,
-            dataType: 'JSONP',
-            crossDomain: true,
-            cache   : false,
-            ContentType: 'application/json',
-            //jsonpCallback: '?',
-            //jsonp: 'callback',
-            success : function (response) {
-                ins.showTips("验证码发送成功！");
-                ins.verifyCodeTimeOut();
-            },
-            error   : function (xhr, status, err) {
-                var $modal=$("#root_modal");
-                var content;
-                var errType="";
-                if(xhr.status==200 || xhr.status=="200") {
-                    ins.showTips("验证码发送成功！");
-                    ins.verifyCodeTimeOut();
-                    return;
-                } else if(xhr.status==404||xhr.status=="404") {
-                        content="错误描述:        "+xhr.responseText;
-                        errType="";
-                        switch(xhr.statusText) {
-                            case "Not Found":
-                                errType="发生错误:"+"path not found";
-                                break;
-                            default:
-                                break;
-                        }
-                } else if (xhr.status == 502 || xhr.status == "502") {
-                        content = "错误描述:        " + xhr.responseText;
-                        errType = "发生错误:" + "无效的服务器指向";
-                }
-                $modal.find(".modal-body").text(content);
-                $modal.find(".modal-title").text(errType);
-                $modal.modal('show');
-            }
-        });
+
     },
 
     submit:function(){ //修改密码提交按钮
@@ -434,12 +356,12 @@ var Login=React.createClass({
 
     render:function(){
         var mainContent;
-        var view=this.state.view;
+        var view=view;
 
         switch(view){
             case 'login':
                 mainContent=
-                    <div ref="loginPage"  onLoad={this.loginAutoLogin}>
+                    <div ref="loginPage" >
                         <div className="main-form">
                             <div className="passport-tab" id="login-tabs">
                                 <div className="tabs">
@@ -467,9 +389,9 @@ var Login=React.createClass({
                                                     <tr >
                                                         <td>验证码: </td>
                                                         <td><input type="text" name="verify" id="verify" className="passport-txt xl w-full" /></td>
-                                                        <td><img style={{paddingLeft:'10px'}} id="validateImage" src="/validatecode.jpg"/></td>
-                                                        <td><img style={{paddingLeft:'5px'}} onClick={this.repaintImage} src={window.App.getResourceDeployPrefix()+"/images/refresh1.png"} ></img></td>
-                                                        <td><span id="verifyMsg" className="errorMessage"></span></td>
+                                                        <td><img style={{paddingLeft:'10px'}} id="validateImage" /></td>
+                                                        <td><img style={{paddingLeft:'5px'}} /></td>
+                                                        <td><span id="verifyMsg" className="errorMessage"/></td>
                                                     </tr>
                                                 </tbody>
                                             </table>
@@ -477,7 +399,7 @@ var Login=React.createClass({
                                             <div className="form-item form-sevenday">
                                                 <div className="form-cont clearfix">
                                                     <label><input type="checkbox" id="login_autoLoginCheckbox" className="passport-sevenday" tabIndex="2" />记住密码</label>
-                                                    <a className="forget-link" onClick={this.viewSwitch.bind(this,'forget')}>忘记密码</a>
+                                                    <a className="forget-link" >忘记密码</a>
                                                 </div>
                                             </div>
 
@@ -488,7 +410,7 @@ var Login=React.createClass({
 
                                                         <button type="button" id="login" className="passport-btn passport-btn-def xl w-full" tabIndex="4" onClick={this.login}>
                                                             <a style={{color:'#ffffff'}}>登录</a>
-                                                            <Link to={window.App.getAppRoute() + this.state.path} id="goToOther"></Link>
+                                                            <Link  id="goToOther"/>
                                                         </button>
                                                 </div>
                                             </div>
