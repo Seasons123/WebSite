@@ -3,7 +3,7 @@
     "port": 3000,
     "hot": true,
     "proxy": {
-      "/insurancems/*.do": {
+      "/insurancems/*": {
         "model": "on",
         "secure": false
       }

@@ -134,7 +134,7 @@
       this.formatViewType = this.element.data('formatViewType');
     }
 
-    this.minView = 0;
+    this.minView = 2;
     if ('minView' in options) {
       this.minView = options.minView;
     } else if ('minView' in this.element.data()) {
@@ -288,7 +288,7 @@
           }]
         ];
       }
-      else if (this.component && this.hasInput) { // components: input + button
+      else if (this.component && this.hasInput) { // component: input + button
         this._events = [
           // For components that are not readonly, allow keyboard nav
           [this.element.find('input'), {
@@ -1878,7 +1878,7 @@
       var $this = $(this);
       if ($this.data('datetimepicker')) return;
       e.preventDefault();
-      // components click requires us to explicitly show it
+      // component click requires us to explicitly show it
       $this.datetimepicker('show');
     }
   );

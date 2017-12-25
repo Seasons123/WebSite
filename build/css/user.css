@@ -10,16 +10,6 @@ body {
 
 }
 
-/** ÉèÖÃÄ¬ÈÏ×ÖÌå **/
-body, button, input, select, textarea {
-    font: 12px/150% "Microsoft YaHei", "Î¢ÈíÑÅºÚ", sans-serif,Arial, Helvetica;
-    color: #666666;
-}
-
-body {
-    background: url(../images/sky.png) top center no-repeat;
-}
-
 .icon-switcher {
     background: #F9F7F6;
     margin-left: 0px;

@@ -14,5 +14,14 @@ module.exports = keyMirror({
     BUSY_IN_BUSINESS:null,
     UPDATE_ROUTE:null,
     TODO_LOG:null,
-    GET_LOG:null
+    GET_LOG:null,
+    INIT_LOG:null,
+    TODO_PAGEDATA:null,
+    GET_PAGEDATA:null,
+    TODO_ROUTER:null,
+    GET_ROUTER:null,
+    TODO_RESULT:null,
+    GET_RESULT:null,
+    TODO_LOGINNAME:null,
+    GET_LOGNNAME:null
 });

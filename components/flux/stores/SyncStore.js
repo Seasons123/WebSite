@@ -3,6 +3,7 @@ var EventEmitter = require('events').EventEmitter;
 var SyncConstants = require('../constants/SyncConstants');
 var assign = require('object-assign');
 
+
 var CHANGE_EVENT = 'change';
 
 var PRONOUNCE_EVENT='pronounce';
@@ -22,6 +23,14 @@ var _devote=false;
 var _mustdone={};
 
 var _note=false;//登录状态
+
+var _loginName={};//登录名
+
+var _pageData={};//页面数据
+
+var _router="/mainPage";//路由地址
+
+var _result=false;//返回结果
 
 
 
@@ -107,7 +116,33 @@ var SyncStore = assign({}, EventEmitter.prototype, {
     setNote:function(){
       _note=true;
     },
-
+    initNote:function () {
+      _note=false;
+    },
+    getPageData:function () {
+        return _pageData;
+    },
+    setPageData:function (pageData) {
+        _pageData=pageData;
+    },
+    getRouter:function(){
+        return _router;
+    },
+    setRouter:function(router){
+        _router=router;
+    },
+    getResult:function(){
+        return _result;
+    },
+    setResult:function(){
+        _result=true;
+    },
+    getLoginName:function(){
+        return _loginName;
+    },
+    setLoginName:function(loginName){
+        _loginName=loginName;
+    },
     getAll: function () {
         return _todos;
     },
@@ -203,6 +238,33 @@ AppDispatcher.register(function (action) {
             break;
         case SyncConstants.GET_LOG:
             SyncStore.getNote();
+            break;
+        case SyncConstants.INIT_LOG:
+            SyncStore.initNote();
+            break;
+        case SyncConstants.TODO_PAGEDATA:
+            SyncStore.setPageData();
+            break;
+        case SyncConstants.GET_PAGEDATA:
+            SyncStore.getPageData();
+            break;
+        case SyncConstants.TODO_ROUTER:
+            SyncStore.setRouter();
+            break;
+        case SyncConstants.GET_ROUTER:
+            SyncStore.getRouter();
+            break;
+        case SyncConstants.TODO_RESULT:
+            SyncStore.setResult();
+            break;
+        case SyncConstants.GET_RESULT:
+            SyncStore.getResult();
+            break;
+        case SyncConstants.TODO_LOGINNAME:
+            SyncStore.setLoginName();
+            break;
+        case SyncConstants.GET_LOGNNAME:
+            SyncStore.getLoginName();
             break;
         case SyncConstants.TODO_CREATE:
             sync = action.sync;

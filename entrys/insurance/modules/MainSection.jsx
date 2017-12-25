@@ -1,13 +1,23 @@
 import React from 'react';
 import {render} from 'react-dom';
 
-//import Nav from '../components/Navigator.jsx';
-import MENU from '../../../data/menus.json';
-import Footer from '../components/Footer.jsx';
+import Nav from '../modules/TopNav.jsx';
+import Footer from '../modules/Footer.jsx';
+import MainPage from '../components/MainPage.jsx';
+import Login from '../modules/Login.jsx';
+import LifeInsurance from '../components/LifeInsurance.jsx';
+import CarInsurance from '../components/CarInsurance.jsx';
+import Consultation from '../components/Consultation.jsx';
+import NewConsultation from '../components/NewConsultation';
+import LifeInsuranceBuyPage from '../components/LifeInsuranceBuyPage';
+import PersonalCenter from '../components/PersonalCenter.jsx';
+import News from '../components/NewsPage.jsx';
+import AboutUs from '../components/AboutUs.jsx';
 import App from '../modules/App.jsx';
 
 var config=require('../../../config.json');
 import '../../../css/insurance/components/mainSection.css';
+import '../../../css/insurance/components/css.css';
 var SyncActions = require('../../../components/flux/actions/SyncActions');
 
 
@@ -45,7 +55,11 @@ var MainSection = React.createClass({
             {
                 case window.App.getAppRoute() + "/":
                     ctrl = <App></App>;
-                    label = "主页";
+                    label = "首页";
+                    break;
+                case window.App.getAppRoute() + "/login":
+                    ctrl = <Login></Login>;
+                    label = "登录";
                     break;
                 case window.App.getAppRoute() + "/mainPage":
                     ctrl = <MainPage></MainPage>;
@@ -69,24 +83,28 @@ var MainSection = React.createClass({
                     ctrl = <PersonalCenter></PersonalCenter>;
                     label = "个人中心";
                     break;
-                case window.App.getAppRoute() + "/consult":
+                case window.App.getAppRoute() + "/consultation":
                     ctrl = <Consultation></Consultation>;
                     label = "业务咨询";
                     break;
-                case window.App.getAppRoute() + "/aboutUs":
-                    ctrl = <AboutUs></AboutUs>;
-                    label = "关于我们";
-                    break;
-                case window.App.getAppRoute() + "/personInfo":
-                    ctrl = <PersonInfo></PersonInfo>;
-                    label = "关于我们";
-                    break;
                 case window.App.getAppRoute() + "/lifeInsurance":
                     ctrl = <LifeInsurance></LifeInsurance>;
-                    label = "关于我们";
+                    label = "寿险";
                     break;
                 case window.App.getAppRoute() + "/carInsurance":
                     ctrl = <CarInsurance></CarInsurance>;
+                    label = "车险";
+                    break;
+                case window.App.getAppRoute() + "/newConsultation":
+                    ctrl = <NewConsultation></NewConsultation>;
+                    label = "业务咨询";
+                    break;
+                case window.App.getAppRoute() + "/lifeInsuranceBuyPage":
+                    ctrl = <LifeInsuranceBuyPage></LifeInsuranceBuyPage>;
+                    label = "寿险购买";
+                    break;
+                case window.App.getAppRoute() + "/aboutUs":
+                    ctrl = <AboutUs></AboutUs>;
                     label = "关于我们";
                     break;
 
@@ -169,19 +187,13 @@ var MainSection = React.createClass({
 
         return (
             <div style={{margin: "0px auto 0 auto",width:"100%"}} className="baba">
-                <div ref="mainSection" className="mainSection"
-                     style={{display:"none",marginLeft:"auto",marginRight:"auto",marginBottom:"auto"}}>
-                    <div style={{width:'100%'}}>
-                        <Nav logo={window.App.getResourceDeployPrefix()+"/images/logo.png"} data={MENU} />
+                <Nav />
+                <div>
+                    <div ref="mainSection" className="mainSection" style={{display:"none",marginLeft:"auto",marginRight:"auto",marginBottom:"auto"}}>
+                        {ctrl}
                     </div>
-                    {ctrl}
                 </div>
-
-                <div className="footer"
-                     style={{background:'url('+window.App.getResourceDeployPrefix()+'/images/footer.png) no-repeat',backgroundSize:'100%',
-                        position:'fixed',bottom:'0',width:'100%',height:'5%'}}>
-                    <Footer/>
-                </div>
+                <Footer />
             </div>
         );
 

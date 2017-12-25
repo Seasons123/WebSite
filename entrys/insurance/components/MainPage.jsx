@@ -7,12 +7,9 @@ import {Link} from 'react-router';
 
 import TopNav from '../modules/TopNav.jsx';
 import Footer from '../modules/Footer.jsx';
-import NewsList from './NewsList.jsx';
-import NewsPage from './NewsPage.jsx';
 
 import Banner from '../../../components/ad/Banner/Banner';
 
-var ProxyQ = require('../../../components/proxy/ProxyQ');
 
 /**Configure the image information for the ad section start*/
 const IMAGE_DATA = [
@@ -31,29 +28,7 @@ var MainPage=React.createClass({
         this.setState({data: data, hiddenInfo: detail, contentMapping: contentMapping, isEnter: true})
     },
 
-    initialData: function () {
-        var url = "/func/allow/getNewsList";
 
-        ProxyQ.query(
-            'get',
-            url,
-            null,
-            null,
-            function (response) {
-                var data;
-                if (Object.prototype.toString.call(response) != '[object Array]')
-                    if (response.data !== undefined && response.data !== null)
-                        if (Object.prototype.toString.call(response.data) == '[object Array]')
-                            data = response.data;
-                        else
-                            data = response;
-                this.setState({data: data});
-            }.bind(this),
-            function (xhr, status, err) {
-                console.error(this.props.url, status, err.toString());
-            }.bind(this)
-        );
-    },
 
     getInitialState: function () {
         return {data: null}
@@ -61,8 +36,6 @@ var MainPage=React.createClass({
 
     render:function(){
         var mainContent;
-
-        if (this.state.data !== undefined && this.state.data !== null) {
             mainContent=
                 <div>
                     <TopNav />
@@ -145,10 +118,6 @@ var MainPage=React.createClass({
                                 <div className="news_L">
 
                                     <div>
-                                        <NewsList
-                                            data={this.state.data}
-                                            clickCb={this.clickCb}
-                                        />
                                     </div>
                                 </div>
                             </div>
@@ -181,20 +150,11 @@ var MainPage=React.createClass({
                     </div>
                     <Footer />
                 </div>
-        } else{
-            this.initialData();
-        }
+
 
         if (this.state.isEnter != undefined && this.state.isEnter != null) { //进入新闻详情
             return (
-                <NewsPage
-                    addNav={true}
-                    data={this.state.data}
-                    auto={true}
-                    hiddenInfo={this.state.hiddenInfo}
-                    contentMapping={this.state.contentMapping}
-                    display="content"
-                    />
+                <div></div>
             );
         }
 

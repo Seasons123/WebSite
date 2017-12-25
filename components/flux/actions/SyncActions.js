@@ -17,6 +17,52 @@ var SyncActions = {
             type:SyncConstants.GET_LOG
         });
     },
+    initNote:function () {
+      AppDispatcher.dispatch({
+        type:SyncConstants.INIT_LOG
+      });
+    },
+    setState:function () {
+        AppDispatcher.dispatch({
+            type:SyncConstants.TODO_PAGEDATA
+        });
+    },
+
+    getState:function () {
+        AppDispatcher.dispatch({
+            type:SyncConstants.GET_PAGEDATA
+        });
+    },
+    setRouter:function () {
+        AppDispatcher.dispatch({
+            type:SyncConstants.TODO_ROUTER
+        });
+    },
+    getRouter:function () {
+        AppDispatcher.dispatch({
+            type:SyncConstants.GET_ROUTER
+        });
+    },
+    setResult:function () {
+        AppDispatcher.dispatch({
+            type:SyncConstants.TODO_RESULT
+        });
+    },
+    getResult:function () {
+        AppDispatcher.dispatch({
+            type:SyncConstants.GET_RESULT
+        });
+    },
+    setLoginName:function () {
+        AppDispatcher.dispatch({
+            type:SyncConstants.TODO_LOGINNAME
+        });
+    },
+    getLoginName:function () {
+        AppDispatcher.dispatch({
+            type:SyncConstants.GET_LOGNNAME
+        });
+    },
 
 
     create: function (ob) {

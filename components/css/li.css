@@ -1,0 +1,25 @@
+.Li ul li span {
+    cursor: pointer;
+}
+.new-title{
+    display: block;
+    float: left;
+    width: 780px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-size: 15px;
+    margin-left: 6%;
+}
+.new-title:hover {
+    color: #337aff;
+}
+.li-new-date{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.list a span {
+    color: #337ab7;
+    cursor: pointer;
+}
