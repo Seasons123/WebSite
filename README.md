@@ -1,4 +1,5 @@
 >>>>>>> test website for ADReact
-#command
+
+command
 
 webpack-dev-server
