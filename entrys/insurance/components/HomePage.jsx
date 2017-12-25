@@ -19,13 +19,13 @@ var HomePage=React.createClass({
         return(
 
             <div className="homePage">
-                <Nav/>
+                 <Nav/>
                 <div className="w1500">
                     <div className="homePage_L">
                         <img src={window.App.getResourceDeployPrefix()+"/images/images-8.png"}/>
                     </div>
                     <div className="homePage_R" >
-                        <div style={{minHeight: '400px', paddingTop: '30%'}}>
+                    <div style={{minHeight: '400px', paddingTop: '30%'}}>
                             <ul style={{listStyle:'none'}}>
                                 <li style={{width: '250px',float:'left'}}>
                                     <span style={{display:'block',marginBottom:'20px'}}>
@@ -57,10 +57,10 @@ var HomePage=React.createClass({
                                 </li>
                             </ul>
 
-                        </div>
+                    </div>
                         <div style={{paddingTop: '20%'}}>
                             <Link style={{fontSize: 'x-large', paddingLeft: '195px'}}to={window.App.getAppRoute() + "/mainPage"}>
-                                进入主页
+                            进入主页
                             </Link>
                         </div>
                     </div>

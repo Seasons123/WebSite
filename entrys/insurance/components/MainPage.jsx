@@ -1,13 +1,18 @@
+/**
+ * Created by douxiaobin on 2016/10/27.
+ */
 import React from 'react';
 import {render} from 'react-dom';
 import {Link} from 'react-router';
 
 import TopNav from '../modules/TopNav.jsx';
 import Footer from '../modules/Footer.jsx';
-
+import NewsList from './NewsList.jsx';
+import NewsPage from './NewsPage.jsx';
 
 import Banner from '../../../components/ad/Banner/Banner';
 
+var ProxyQ = require('../../../components/proxy/ProxyQ');
 
 /**Configure the image information for the ad section start*/
 const IMAGE_DATA = [
@@ -22,13 +27,43 @@ const IMAGE_DATA = [
 
 var MainPage=React.createClass({
 
+    clickCb: function (data, detail, contentMapping) {
+        this.setState({data: data, hiddenInfo: detail, contentMapping: contentMapping, isEnter: true})
+    },
+
+    initialData: function () {
+        var url = "/func/allow/getNewsList";
+
+        ProxyQ.query(
+            'get',
+            url,
+            null,
+            null,
+            function (response) {
+                var data;
+                if (Object.prototype.toString.call(response) != '[object Array]')
+                    if (response.data !== undefined && response.data !== null)
+                        if (Object.prototype.toString.call(response.data) == '[object Array]')
+                            data = response.data;
+                        else
+                            data = response;
+                this.setState({data: data});
+            }.bind(this),
+            function (xhr, status, err) {
+                console.error(this.props.url, status, err.toString());
+            }.bind(this)
+        );
+    },
 
     getInitialState: function () {
         return {data: null}
     },
 
     render:function(){
-         var mainContent=
+        var mainContent;
+
+        if (this.state.data !== undefined && this.state.data !== null) {
+            mainContent=
                 <div>
                     <TopNav />
 
@@ -92,7 +127,8 @@ var MainPage=React.createClass({
                                     <span className="about-more"><i href="javascript:void(0)">more&gt;&gt;</i></span>
                                 </Link>
                                 <div className="company_img">
-                                    <img alt="" src={window.App.getResourceDeployPrefix() + "/images/company.jpg"}></img>
+                                    <img alt=""
+                                         src={window.App.getResourceDeployPrefix() + "/images/company.jpg"}></img>
                                     捷惠保：立足于客户立场，深度发掘客户需求，客观分析，在众多保险产品中为客户选择适合的产品；
                                     与保险主体公司深度合作，依据已有客户需求研发更多，保障全，保费低的优质产品；
                                     为客户提供咨询，理赔，资料代管，车驾管服务等与保险相关的一站式服务。
@@ -107,7 +143,12 @@ var MainPage=React.createClass({
                                     <span className="news-more"><i href="javascript:void(0)">more&gt;&gt;</i></span>
                                 </Link>
                                 <div className="news_L">
+
                                     <div>
+                                        <NewsList
+                                            data={this.state.data}
+                                            clickCb={this.clickCb}
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -140,11 +181,20 @@ var MainPage=React.createClass({
                     </div>
                     <Footer />
                 </div>
-
+        } else{
+            this.initialData();
+        }
 
         if (this.state.isEnter != undefined && this.state.isEnter != null) { //进入新闻详情
             return (
-                <div></div>
+                <NewsPage
+                    addNav={true}
+                    data={this.state.data}
+                    auto={true}
+                    hiddenInfo={this.state.hiddenInfo}
+                    contentMapping={this.state.contentMapping}
+                    display="content"
+                    />
             );
         }
 
@@ -156,3 +206,6 @@ var MainPage=React.createClass({
     },
 });
 module.exports=MainPage;
+/**
+ * Created by douxiaobin on 2016/10/27.
+ */

@@ -1,0 +1,20 @@
+[
+  {"city":"请选择用车城市","carNum":""},
+  {"city":"济南","carNum":"鲁A"},
+  {"city":"青岛","carNum":"鲁B"},
+  {"city":"淄博","carNum":"鲁C"},
+  {"city":"枣庄","carNum":"鲁D"},
+  {"city":"东营","carNum":"鲁E"},
+  {"city":"烟台","carNum":"鲁F"},
+  {"city":"潍坊","carNum":"鲁G"},
+  {"city":"济宁","carNum":"鲁H"},
+  {"city":"泰安","carNum":"鲁J"},
+  {"city":"威海","carNum":"鲁K"},
+  {"city":"日照","carNum":"鲁L"},
+  {"city":"滨州","carNum":"鲁M"},
+  {"city":"德州","carNum":"鲁N"},
+  {"city":"聊城","carNum":"鲁P"},
+  {"city":"临沂","carNum":"鲁Q"},
+  {"city":"菏泽","carNum":"鲁R"},
+  {"city":"莱芜","carNum":"鲁S"}
+]
