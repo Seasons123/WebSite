@@ -1212,14 +1212,13 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
 }
 
 .product_img {
-    width: 485px;
+    width: 183px;
     margin: 9px;
     float: left;
-    cursor: pointer;
 }
 
 .product_img img {
-    width: 470px;
+    width: 183px;
     height: 129px;
 }
 
@@ -1232,7 +1231,7 @@ a:hover,.limitCnt p a:hover.loginLink,#footer a.ftsite:hover {
     opacity: .8;
     /*其他，透明度50%*/
     margin-top: -25px;
-    width: 485px;
+    width: 183px;
     height: 25px;
 }
 

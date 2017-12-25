@@ -45,31 +45,57 @@ var MainPage=React.createClass({
 
                     <div className="margin w1008">
                         <div className="product">
+                        </div>
+                        <div className="product">
                             <div className="product_B">
-                                <a href="javascript:void(0)">产品介绍 </a>
+                                <a href="Product.jsp">产品介绍 </a><span><a href="Product.">更多&gt;&gt; </a></span>
                             </div>
+
                             <Link to={window.App.getAppRoute() + "/lifeInsurance"}>
                                 <div className="product_img">
-                                    <img src={window.App.getResourceDeployPrefix()+"/images/uploads/project/201508041122115824_21534582.jpg"} style={{width:'485px', height:'129px'}}></img>
+                                    <img src={window.App.getResourceDeployPrefix()+"/images/uploads/project/201508041122361838_09058640.jpg"} style={{width:'138px', height:'129px'}}></img>
                                     <div className="product_bg">
                                     </div>
                                     <div className="product_font">
-                                             <i style={{color: 'aliceblue'}}> 寿险产品</i>
+                                        <i style={{color: 'aliceblue'}}> 车险产品</i>
                                     </div>
                                     <div className="clear">
                                     </div>
                                 </div>
                             </Link>
-                            <Link to={window.App.getAppRoute() + "/carInsurance"}>
-                                <div className="product_img">
-                                    <img src={window.App.getResourceDeployPrefix()+"/images/uploads/project/201508041122361838_09058640.jpg"} style={{width:'485px', height:'129px'}}></img>
-                                    <div className="product_bg">
-                                    </div>
-                                    <div className="product_font">
-                                            <i style={{color: 'aliceblue'}}> 车险产品</i>
-                                    </div>
-                                    <div className="clear">
-                                    </div>
+
+                            <Link className="product_img">
+                                <img src={window.App.getResourceDeployPrefix()+"/images/uploads/project/201508041122115824_21534582.jpg"} style={{width:'183px', height:'129px'}}></img>
+                                <div className="product_bg">
+                                </div>
+                                <div className="product_font">
+                                    <i style={{color: 'aliceblue'}}> 财产险产品</i>
+                                </div>
+                                <div className="clear">
+                                </div>
+
+                            </Link>
+
+                            <Link className="product_img">
+                                <img src={window.App.getResourceDeployPrefix()+"/images/uploads/project/201508041121433098_40696128.jpg"} style={{width:'183px', height:'129px'}}></img>
+                                <div className="product_bg">
+                                </div>
+                                <div className="product_font">
+                                    <i style={{color: 'aliceblue'}}> 人身保险产品</i>
+                                </div>
+                                <div className="clear">
+                                </div>
+
+                            </Link>
+
+                            <Link className="product_img">
+                                <img src={window.App.getResourceDeployPrefix()+"/images/uploads/project/201508041122464354_46422271.jpg"} style={{width:'183px', height:'129px'}}></img>
+                                <div className="product_bg">
+                                </div>
+                                <div className="product_font">
+                                    <i style={{color: 'aliceblue'}}> 理财类保险产品</i>
+                                </div>
+                                <div className="clear">
                                 </div>
                             </Link>
                         </div>
