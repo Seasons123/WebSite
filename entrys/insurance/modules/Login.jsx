@@ -407,7 +407,7 @@ var Login=React.createClass({
 
                                             <div className="form-item">
                                                 <div className="form-cont">
-                                                    <Link style={{color:'#ffffff'}} to={window.App.getAppRoute() + "/aboutUs"}>
+                                                    <Link style={{color:'#ffffff'}} to={window.App.getAppRoute() + "/adminConfig"}>
                                                         <button type="button" id="login" className="passport-btn passport-btn-def xl w-full" tabIndex="4" onClick={this.login}>
                                                             登录
                                                         </button>

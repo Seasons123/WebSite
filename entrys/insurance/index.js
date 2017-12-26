@@ -32,6 +32,7 @@ render((
             <Route path={window.App.getAppRoute()+"/admin"} component={MainSection}/>
             <Route path={window.App.getAppRoute()+"/lifeInsuranceBuyPage"} component={lifeInsuranceBuyPage}/>
             <Route path={window.App.getAppRoute()+"/carInsuranceBuyPage"} component={carInsuranceBuyPage}/>
+            <Route path={window.App.getAppRoute()+"/adminConfig"} component={MainSection}/>
         </Route>
     </Router>
 ), document.getElementById('root'))
