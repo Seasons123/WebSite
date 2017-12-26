@@ -407,11 +407,11 @@ var Login=React.createClass({
 
                                             <div className="form-item">
                                                 <div className="form-cont">
-
+                                                    <Link style={{color:'#ffffff'}} to={window.App.getAppRoute() + "/aboutUs"}>
                                                         <button type="button" id="login" className="passport-btn passport-btn-def xl w-full" tabIndex="4" onClick={this.login}>
-                                                            <a style={{color:'#ffffff'}}>登录</a>
-                                                            <Link  id="goToOther"/>
+                                                            登录
                                                         </button>
+                                                    </Link>
                                                 </div>
                                             </div>
                                         </div>
@@ -598,9 +598,6 @@ var Login=React.createClass({
 
         return(
             <div className="passport-wrapper">
-                <header id="header" className="passport-header">
-                    <div id="logo"><a><img src={window.App.getResourceDeployPrefix()+"/images/loginLogo.png"} /></a></div>
-                </header>
                 <div id="container" ref='login-register-forget'>
                     <div className="passport-sign">
 
