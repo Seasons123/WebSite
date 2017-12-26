@@ -29,6 +29,7 @@ render((
             <Route path={window.App.getAppRoute()+"/carInsurance"} component={MainSection}/>
             <Route path={window.App.getAppRoute()+"/lifeDetail"} component={MainSection}/>
             <Route path={window.App.getAppRoute()+"/newConsultation"} component={MainSection}/>
+            <Route path={window.App.getAppRoute()+"/admin"} component={MainSection}/>
             <Route path={window.App.getAppRoute()+"/lifeInsuranceBuyPage"} component={lifeInsuranceBuyPage}/>
             <Route path={window.App.getAppRoute()+"/carInsuranceBuyPage"} component={carInsuranceBuyPage}/>
         </Route>

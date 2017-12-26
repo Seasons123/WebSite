@@ -13,6 +13,7 @@ import LifeInsuranceBuyPage from '../components/LifeInsuranceBuyPage';
 import PersonalCenter from '../components/PersonalCenter.jsx';
 import News from '../components/NewsPage.jsx';
 import AboutUs from '../components/AboutUs.jsx';
+import Admin from '../components/admin.jsx';
 import App from '../modules/App.jsx';
 
 var config=require('../../../config.json');
@@ -105,6 +106,10 @@ var MainSection = React.createClass({
                     break;
                 case window.App.getAppRoute() + "/aboutUs":
                     ctrl = <AboutUs></AboutUs>;
+                    label = "关于我们";
+                    break;
+                case window.App.getAppRoute() + "/admin":
+                    ctrl = <Admin></Admin>;
                     label = "关于我们";
                     break;
 
