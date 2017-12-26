@@ -32,7 +32,10 @@ var AboutUs=React.createClass({
                 {mainContent}
             </div>
         )
-    }
+    },
+    componentDidMount:function () {
+        this.repaintImage();
+    },
 });
 module.exports=AboutUs;
 

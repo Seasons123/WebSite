@@ -9,6 +9,7 @@ import MainPage from './components/MainPage.jsx';
 import HomePage from './components/HomePage.jsx';
 import MainSection from './modules/MainSection.jsx';
 import Login from './modules/Login.jsx';
+import AdminConfig from './modules/AdminConfig.jsx';
 import lifeInsuranceBuyPage from './components/LifeInsuranceBuyPage';
 import carInsuranceBuyPage from './components/CarInsuranceBuyPage';
 
@@ -19,6 +20,7 @@ render((
             <Route path={window.App.getAppRoute()+"/"} component={HomePage}/>
             <Route path={window.App.getAppRoute()+"/mainPage"} component={MainPage}/>
             <Route path={window.App.getAppRoute()+"/login"} component={Login}/>
+            <Route path={window.App.getAppRoute()+"/adminConfig"} component={AdminConfig}/>
             <Route path={window.App.getAppRoute()+"/productCenter"} component={MainSection}/>
             <Route path={window.App.getAppRoute()+"/news"} component={MainSection}/>
             <Route path={window.App.getAppRoute()+"/personalCenter"} component={MainSection}/>
