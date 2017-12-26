@@ -58,7 +58,7 @@ export default class Slider extends Component {
         let thumbNode = <Bannerthumb turn={this.turn.bind(this)} count={count} nowLocal={this.state.nowLocal} />;
 
         return (
-            <div style={{ width:this.props.data.width, height:this.props.data.height,margin:'0 auto'}}>
+            <div style={{ width:this.props.data.width, height:this.props.data.height,margin:'0 auto',marginTop:'10px'}}>
                 <div
                     className="slider"
                     onMouseOver={this.props.data.pause?this.pausePlay.bind(this):null} onMouseOut={this.props.data.pause?this.goPlay.bind(this):null}>
