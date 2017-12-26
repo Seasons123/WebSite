@@ -1,0 +1,88 @@
+body{
+    overflow: hidden;
+
+}
+.adBig{
+    overflow:hidden;
+    position:relative;
+
+}
+.adBig a{
+    background-size: cover;
+    background-position: center;
+}
+
+.adSmallRight{
+    overflow:hidden;
+    position: fixed;
+    z-index: 1001;
+    top : 0;
+    right: 0;
+}
+.adSmallLeft{
+    overflow:hidden;
+    position: fixed;
+    z-index: 1001;
+    top : 0;
+    left: 0;
+}
+.adSmallBottom{
+    overflow:hidden;
+    position: fixed;
+    z-index: 1001;
+    left:0;
+    bottom: 0;
+}
+
+/*关闭按钮*/
+.rightAd-close {
+    display: block;
+    position:absolute;
+    right:2px;
+    top:2px;
+    height:20px;
+    line-height:20px;
+    width:30px;
+    padding:0 6px;
+    font-size:18px;
+    font-weight:bold;
+    color: #666;
+    text-decoration:none;
+}
+.rightAd-close-smallImageLeftRight{
+    display: block;
+    position:absolute;
+    left:1px;
+    top:2px;
+    height:20px;
+    line-height:20px;
+    width:30px;
+    padding:0 6px;
+    font-size:18px;
+    font-weight:bold;
+    color: #666;
+    text-decoration:none;
+}
+.leftAd-close {
+    display: block;
+    position:absolute;
+    left:40px;
+    top:20px;
+    height:20px;
+    line-height:20px;
+    width:30px;
+    padding:0 6px;
+    font-size:18px;
+    font-weight:bold;
+    color: #666;
+    text-decoration:none;
+}
+
+.clear {
+    clear: both;
+    display: block;
+    overflow: hidden;
+    line-height: 0;
+    font-size: 0;
+    height: 0;
+}

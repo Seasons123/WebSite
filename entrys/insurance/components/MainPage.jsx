@@ -11,10 +11,10 @@ import Banner from '../../../components/ad/Banner/Banner';
 /**Configure the image information for the ad section start*/
 const IMAGE_DATA = [
     {
-        src: require('../../../components/ad/images/size7(1008.331)/1.jpg'),
+        src: require('../../../components/ad/assets/images/banner/size7(1008.331)/1.jpg'),
     },
     {
-        src: require('../../../components/ad/images/size7(1008.331)/2.jpg')
+        src: require('../../../components/ad/assets/images/banner/size7(1008.331)/2.jpg')
     }
 ];
 /**Configure the image information for the ad section end*/
@@ -31,13 +31,16 @@ var MainPage=React.createClass({
                         items={IMAGE_DATA}
                         width={'1008px'}
                         height={'331px'}
-                        speed={0.6}
-                        delay={2.6}
-                        pause={true}
-                        autoplay={true}
-                        dots={true}
-                        arrows={true}
+                        delay={0}
+                        duration={1450}
+                        autoPlaySpeed={5000}
+                        autoPlay={true}
+                        pause={false}
+                        arrow={true}
+                        arrowDefault={false}
+                        thumb={false}
                         animType={"Slider"}
+
                     />
 
                     <div className="clear">

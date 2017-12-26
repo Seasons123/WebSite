@@ -66,27 +66,32 @@ module.exports = {
 
         module: {
         loaders: [
-
-            { test: /\.js[x]?$/, include: path.resolve(__dirname, 'app'), exclude:/node_modules/,loader: 'babel-loader' },
-
-            {
-                test: /\.js$/,
-                exclude: '/node_modules/',
-                loader: 'jsx-loader?harmony'
-            },
-            { test: /\.css$/, loader: "style!css" },
-            {test:/\.json$/,loader:"json"},
-            {
-                test: /\.jsx?$/,
-                loader:'babel',
-                exclude:'/node_modules/',
-                query: {
-                    presets: ['es2015','react']
-                }
-            },
-            {test: /\.png$/, loader: "url-loader?mimetype=image/png"},
-            {test: /\.gif$/, loader: "url-loader?mimetype=image/gif"},
-            {test: /\.jpg$/, loader: "url-loader?mimetype=image/jpeg"}
-        ]
+                {
+                    test: /(\.jsx|\.js)$/,
+                    loader: 'babel?presets[]=es2015&presets[]=react&presets[]=stage-0',
+                    exclude: /node_modules/
+                },
+                { test: /\.css$/, loader: "style!css" },
+                {
+                    test: /\.json$/,
+                    loader: 'json',
+                },
+                {
+                    test: /\.(jpe?g|png|gif|svg)$/,
+                    loader: 'url?limit=8024&name=images/[name].[ext]'
+                },
+                {
+                    test: /\.(woff2?|otf|eot|svg|ttf)$/i,
+                    loader: 'url?name=fonts/[name].[ext]'
+                },
+                {
+                    test: /\.html$/,
+                    loader: 'url?name=[name].[ext]'
+                },
+                {
+                    test: /\.(mp4)$/,
+                    loader: 'file'
+                },
+            ]
     }
 };
