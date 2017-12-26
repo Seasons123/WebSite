@@ -170,7 +170,7 @@ var MainPage=React.createClass({
 
                     <div className="clear">
                     </div>
-                    <Footer />
+
                 </div>
 
         return(
