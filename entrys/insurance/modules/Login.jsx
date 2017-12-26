@@ -356,7 +356,7 @@ var Login=React.createClass({
 
     render:function(){
         var mainContent;
-        var view=view;
+        var view='login';
 
         switch(view){
             case 'login':

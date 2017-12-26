@@ -3,7 +3,6 @@
  */
 import React from 'react';
 import {render} from 'react-dom';
-import {Link} from 'react-router';
 
 var Mpage=React.createClass({
 
@@ -15,10 +14,7 @@ var Mpage=React.createClass({
                 </div>
                 <div className="footer" style={{height: '35px'}}>
                     <div className="w1008 margin">
-                        <p>版权所有©山东泓信信息科技股份有限公司
-                            <Link to={window.App.getAppRoute() + "/admin"}>
-                                <span className="admin">管理员登录</span>
-                            </Link></p>
+                        <p>版权所有©山东泓信信息科技股份有限公司</p>
                     </div>
                 </div>
             </div>
